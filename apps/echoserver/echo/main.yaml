@@ -53,7 +53,7 @@ spec:
   - http:
       paths:
       - path: /{regexp:(echo|ekko)}
-        pathType: Prefix
+        pathType: PathRegexp
         backend:
           service:
             name: echoserver
