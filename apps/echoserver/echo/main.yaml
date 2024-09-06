@@ -52,7 +52,7 @@ spec:
   rules:
   - http:
       paths:
-      - path: /echo
+      - path: /{regexp:(echo|ekko)}
         pathType: Prefix
         backend:
           service:
